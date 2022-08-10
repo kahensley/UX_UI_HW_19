@@ -161,6 +161,12 @@ footer {
     border-color: white;
 }
 
+.skiptoResume {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
 @media only screen and (max-width: 600px) {
     .flexContainer {
       display: flex;
