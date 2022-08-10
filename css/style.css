@@ -1,0 +1,191 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+}
+.logo {
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+}
+nav {
+    width: 83%;
+    padding: 1%;
+}
+ul {
+    margin-left: auto;
+    width: 50%;
+}
+
+li {
+    padding-left: 40px;
+}
+
+.navigation {
+    background-color: #00295f;
+}
+
+.left {
+    float: left;
+    padding: 0 2% 0 0;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: small;
+    text-transform: uppercase;
+    margin: 3% 0 1% 0;
+    letter-spacing: 0.05em;
+
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 1% 0 5% 0;
+}
+
+#intro {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1% 0 5% 0;
+}
+
+.selectedWork {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#selectedWork::after{
+    display: block;
+    width: 25%;
+    justify-content: center;
+    content: '';
+    border-bottom: 1px solid #000;
+    margin: 10px auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 3% 0;
+    align-items: center;
+}
+
+
+button {
+    background-color: #4CAF50; /* green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 0 0 1% 0;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: darkgreen; /* Green */
+    color: white;
+  }
+
+.heroImg {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0 5% 0 5%;
+    border-style: solid;
+    border-color: white;
+}
+.content {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    background-color: #00295f;
+    padding: 2px;
+}
+.ulfooter {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2px;
+
+}
+
+.flexContainer {
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    justify-content: center;
+    margin: 0 10% 5% 10%;
+    column-gap: 50px;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-style: solid;
+    border-color: white;
+    align-items: center;
+}
+
+.flexBoxText {
+    text-align: left;
+    border-style: solid;
+    border-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      margin: 0 1% 0 1%;
+      align-items: center;
+    }
+    .flexBox {
+        width: 92%;
+        margin: 0 0 8% 0;
+    }
+    .content {
+        width: 100%;
+    }
+    #selectedWork::after{
+        width: 80%;
+    }   
+    .heroImg {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .button {
+        margin: 0 0 10% 0;
+        row-gap: 5px;
+    }
+  }
